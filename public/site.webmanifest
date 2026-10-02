@@ -1,0 +1,49 @@
+{
+  "name": "Prince Bhakta — Developer · Creative Editor · Builder",
+  "short_name": "Prince Bhakta",
+  "description": "Portfolio of Prince Bhakta (Kingplayz/Kingplayz008) — Systems Engineer & Creative Editor",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e0e0e",
+  "theme_color": "#6c63ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["portfolio", "developer", "creative", "technology"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Work Projects",
+      "short_name": "Work",
+      "description": "View engineering projects",
+      "url": "/#work",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Creative Work",
+      "short_name": "Creative",
+      "description": "View video & motion projects",
+      "url": "/#creative",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "About Me",
+      "short_name": "About",
+      "description": "Learn more about Prince Bhakta",
+      "url": "/#about",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

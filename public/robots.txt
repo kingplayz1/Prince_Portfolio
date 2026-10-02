@@ -1,0 +1,9 @@
+# Prince Bhakta Portfolio - Robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://princebhakta.dev/sitemap.xml
+
+# Host
+Host: https://princebhakta.dev
