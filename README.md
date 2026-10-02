@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Prince Bhakta Portfolio
 
-## Getting Started
+Premium modern motion-graphics portfolio website for Developer × Creative Editor × Creator × Builder.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Quick Start
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev
+```
 
-## Learn More
+Open http://localhost:3000
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Design System
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Colors:**
+- Background: #070707
+- Surfaces: #111214 / #17181B
+- Text Primary: #F4F4F0
+- Text Secondary: #A5A7AD
+- Accent Violet: #6C63FF
+- Accent Cyan: #00D4FF
+- Accent Green: #7CFF6B
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Typography:**
+- Display: Plus Jakarta Sans
+- Mono: JetBrains Mono
 
-## Deploy on Vercel
+**Animation:** CSS Keyframes with cubic-bezier(0.16, 1, 0.3, 1)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📁 Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+/components
+  Navbar.tsx
+  Hero.tsx
+  Identity.tsx
+  WhatIBuild.tsx
+  SelectedWork.tsx
+  BehindTheBuild.tsx
+  TechStack.tsx
+  CreativeSection.tsx
+  CreatorIdentity.tsx
+  GitHubSection.tsx
+  Timeline.tsx
+  PersonalPhoto.tsx
+  Contact.tsx
+  Footer.tsx
+  ScrollProgress.tsx
+/data
+  projects.json
+  skills.json
+/public/assets
+  prince.png
+```
+
+## 🚀 Deploy to Vercel
+
+1. Push to GitHub
+2. Import project in Vercel
+3. Deploy
+
+## 📱 Sections
+
+1. Hero - Portrait with parallax
+2. Identity - Editorial statement
+3. What I Build - 4 categories
+4. Selected Work - 8 projects
+5. Behind The Build - Terminal
+6. Tech Stack - Marquee
+7. From Code to Content - YouTube
+8. Build. Play. Create.
+9. GitHub - Open source
+10. The Journey - Timeline
+11. Personal Photo
+12. Contact
+
+## 🎯 Features
+
+- Scroll-triggered animations
+- Parallax effects
+- Magnetic hover
+- Reduced motion support
+- Keyboard navigation
+- 60fps animations
+- Mobile responsive
