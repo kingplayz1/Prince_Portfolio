@@ -1,13 +1,13 @@
-import { MetadataRoute } from "next";
+import { MetadataRoute } from 'next';
 
-const siteUrl = "https://princebhakta.com";
+const siteUrl = 'https://princebhakta.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: siteUrl,
       lastModified: new Date(),
-      changeFrequency: "monthly",
+      changeFrequency: 'monthly',
       priority: 1,
     },
   ];

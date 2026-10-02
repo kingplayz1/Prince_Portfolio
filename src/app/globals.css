@@ -1,15 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --bg-primary: #070707;
   --bg-elevated: #111214;
-  --bg-elevated-2: #17181B;
-  --text-primary: #F4F4F0;
-  --text-secondary: #A5A7AD;
-  --text-muted: #6F737A;
-  --accent-violet: #6C63FF;
-  --accent-cyan: #00D4FF;
-  --accent-green: #7CFF6B;
+  --bg-elevated-2: #17181b;
+  --text-primary: #f4f4f0;
+  --text-secondary: #a5a7ad;
+  --text-muted: #6f737a;
+  --accent-violet: #6c63ff;
+  --accent-cyan: #00d4ff;
+  --accent-green: #7cff6b;
 
   --font-display: var(--font-plus-jakarta);
   --font-mono: var(--font-jetbrains);
@@ -138,12 +138,15 @@ html {
 /* Optimize font rendering */
 body {
   text-rendering: optimizeLegibility;
-  font-feature-settings: 'ss01' on, 'ss02' on, 'cv01' on;
+  font-feature-settings:
+    'ss01' on,
+    'ss02' on,
+    'cv01' on;
 }
 
 /* Performance: Content visibility for offscreen sections */
 @media (min-width: 1024px) {
-  section[id]:nth-of-type(n+4) {
+  section[id]:nth-of-type(n + 4) {
     content-visibility: auto;
     contain-intrinsic-size: 0 1000px;
   }
@@ -151,7 +154,7 @@ body {
 
 /* Focus styles for accessibility */
 :focus-visible {
-  outline: 2px solid #6C63FF;
+  outline: 2px solid #6c63ff;
   outline-offset: 2px;
 }
 
@@ -160,7 +163,9 @@ body {
     scroll-behavior: auto;
   }
 
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

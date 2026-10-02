@@ -1,17 +1,17 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#070707] text-[#F4F4F0] px-6">
-      <div className="text-center max-w-md">
-        <div className="text-[120px] sm:text-[200px] font-[800] text-white/[0.08] mb-8">404</div>
-        <h1 className="text-[32px] sm:text-[48px] font-[700] mb-6">PAGE NOT FOUND</h1>
-        <p className="text-[#A5A7AD] mb-10 max-w-sm mx-auto">
-          The page you're looking for doesn't exist or has been moved.
+    <div className="flex min-h-screen items-center justify-center bg-[#070707] px-6 text-[#F4F4F0]">
+      <div className="max-w-md text-center">
+        <div className="mb-8 text-[120px] font-[800] text-white/[0.08] sm:text-[200px]">404</div>
+        <h1 className="mb-6 text-[32px] font-[700] sm:text-[48px]">PAGE NOT FOUND</h1>
+        <p className="mx-auto mb-10 max-w-sm text-[#A5A7AD]">
+          The page you&apos;re looking for doesn&apos;t exist or has been moved.
         </p>
         <Link
           href="/"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-[12px] font-medium hover:bg-[#A5A7AD] transition-colors"
+          className="inline-flex items-center gap-2 rounded-[12px] bg-white px-6 py-3 font-medium text-black transition-colors hover:bg-[#A5A7AD]"
         >
           BACK HOME
         </Link>

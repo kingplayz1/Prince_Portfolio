@@ -23,6 +23,7 @@ Open http://localhost:3000
 ## 🎨 Design System
 
 **Colors:**
+
 - Background: #070707
 - Surfaces: #111214 / #17181B
 - Text Primary: #F4F4F0
@@ -32,6 +33,7 @@ Open http://localhost:3000
 - Accent Green: #7CFF6B
 
 **Typography:**
+
 - Display: Plus Jakarta Sans
 - Mono: JetBrains Mono
 

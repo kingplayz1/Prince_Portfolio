@@ -2,32 +2,49 @@ import Link from 'next/link';
 
 export default function Contact() {
   return (
-    <section id="contact" className="min-h-[80vh] flex items-center py-16 sm:py-24 md:py-32 lg:py-48">
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 w-full">
-        <div className="max-w-[800px] animate-fade-up">
-          <h2 className="text-[40px] sm:text-[52px] md:text-[64px] lg:text-[96px] font-[800] leading-[0.9] tracking-[-0.02em] mb-6 sm:mb-8">
-            LET'S BUILD
+    <section
+      id="contact"
+      className="flex min-h-[80vh] items-center py-16 sm:py-24 md:py-32 lg:py-48"
+    >
+      <div className="mx-auto w-full max-w-[1400px] px-6 md:px-10">
+        <div className="animate-fade-up max-w-[800px]">
+          <h2 className="mb-6 text-[40px] leading-[0.9] font-[800] tracking-[-0.02em] sm:mb-8 sm:text-[52px] md:text-[64px] lg:text-[96px]">
+            LET&apos;S BUILD
             <br />
             SOMETHING.
           </h2>
-          <p className="text-[16px] sm:text-[18px] text-[#A5A7AD] mb-8 sm:mb-12">
+          <p className="mb-8 text-[16px] text-[#A5A7AD] sm:mb-12 sm:text-[18px]">
             Have an idea, project, game system, website, video or creative concept?
           </p>
 
           <Link
             href="mailto:contact@princebhakta.com"
-            className="inline-flex items-center gap-2 sm:gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-black rounded-[12px] font-medium text-[13px] sm:text-[14px] hover:bg-[#A5A7AD] transition-colors mb-12 sm:mb-16"
+            className="mb-12 inline-flex items-center gap-2 rounded-[12px] bg-white px-6 py-3 text-[13px] font-medium text-black transition-colors hover:bg-[#A5A7AD] sm:mb-16 sm:gap-3 sm:px-8 sm:py-4 sm:text-[14px]"
           >
             START A CONVERSATION →
           </Link>
 
-          <div className="flex flex-wrap gap-6 sm:gap-8 text-[13px] sm:text-[14px] text-[#6F737A]">
-            <Link href="https://github.com/kingplayz1" target="_blank" className="hover:text-white transition-colors">GITHUB</Link>
-            <Link href="https://youtube.com/@KINGPLAYZ008" target="_blank" className="hover:text-white transition-colors">YOUTUBE</Link>
-            <Link href="#" className="hover:text-white transition-colors">LINKEDIN</Link>
+          <div className="flex flex-wrap gap-6 text-[13px] text-[#6F737A] sm:gap-8 sm:text-[14px]">
+            <Link
+              href="https://github.com/kingplayz1"
+              target="_blank"
+              className="transition-colors hover:text-white"
+            >
+              GITHUB
+            </Link>
+            <Link
+              href="https://youtube.com/@KINGPLAYZ008"
+              target="_blank"
+              className="transition-colors hover:text-white"
+            >
+              YOUTUBE
+            </Link>
+            <Link href="#" className="transition-colors hover:text-white">
+              LINKEDIN
+            </Link>
           </div>
 
-          <div className="mt-16 sm:mt-24 pt-8 sm:pt-12 border-t border-white/[0.06] flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-[11px] sm:text-[12px] text-[#6F737A]">
+          <div className="mt-16 flex flex-col gap-4 border-t border-white/[0.06] pt-8 text-[11px] text-[#6F737A] sm:mt-24 sm:flex-row sm:items-center sm:justify-between sm:pt-12 sm:text-[12px]">
             <div>PRINCE BHAKTA</div>
             <div>DEVELOPER · EDITOR · CREATOR</div>
           </div>

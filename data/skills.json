@@ -1,1 +1,25 @@
-{"development": ["JavaScript", "TypeScript", "HTML", "CSS", "Node.js", "Lua", "FiveM", "Git", "GitHub", "MySQL", "Cloudflare", "REST APIs", "Discord APIs"], "creative": ["Video Editing", "Motion Graphics", "Visual Storytelling", "Thumbnails", "Brand Visuals"], "tools": ["UI/UX", "Automation", "APIs", "Developer Tools"]}
+{
+  "development": [
+    "JavaScript",
+    "TypeScript",
+    "HTML",
+    "CSS",
+    "Node.js",
+    "Lua",
+    "FiveM",
+    "Git",
+    "GitHub",
+    "MySQL",
+    "Cloudflare",
+    "REST APIs",
+    "Discord APIs"
+  ],
+  "creative": [
+    "Video Editing",
+    "Motion Graphics",
+    "Visual Storytelling",
+    "Thumbnails",
+    "Brand Visuals"
+  ],
+  "tools": ["UI/UX", "Automation", "APIs", "Developer Tools"]
+}

@@ -17,7 +17,7 @@ export default function ScrollProgress() {
 
   return (
     <div
-      className="fixed top-0 left-0 h-[2px] bg-[#6C63FF] z-[100] transition-transform duration-100"
+      className="fixed top-0 left-0 z-[100] h-[2px] bg-[#6C63FF] transition-transform duration-100"
       style={{ transform: `scaleX(${progress})`, transformOrigin: 'left' }}
     />
   );

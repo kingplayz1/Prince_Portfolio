@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { useEffect } from "react";
-import Link from "next/link";
+import { useEffect } from 'react';
+import Link from 'next/link';
 
 export default function GlobalError({
   error,
@@ -11,7 +11,7 @@ export default function GlobalError({
   reset: () => void;
 }) {
   useEffect(() => {
-    console.error("Global application error:", error);
+    console.error('Global application error:', error);
   }, [error]);
 
   return (
@@ -29,23 +29,25 @@ export default function GlobalError({
         />
       </head>
       <body>
-        <div className="min-h-screen flex items-center justify-center bg-[#070707] text-[#F4F4F0] px-6">
-          <div className="text-center max-w-md">
-            <div className="text-[64px] sm:text-[100px] font-[800] text-white/[0.08] mb-8">ERROR</div>
-            <h1 className="text-[32px] sm:text-[48px] font-[700] mb-6">SOMETHING WENT WRONG</h1>
-            <p className="text-[#A5A7AD] mb-10 max-w-sm mx-auto">
+        <div className="flex min-h-screen items-center justify-center bg-[#070707] px-6 text-[#F4F4F0]">
+          <div className="max-w-md text-center">
+            <div className="mb-8 text-[64px] font-[800] text-white/[0.08] sm:text-[100px]">
+              ERROR
+            </div>
+            <h1 className="mb-6 text-[32px] font-[700] sm:text-[48px]">SOMETHING WENT WRONG</h1>
+            <p className="mx-auto mb-10 max-w-sm text-[#A5A7AD]">
               An unexpected error occurred. Please try refreshing the page.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <button
                 onClick={reset}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-black rounded-[12px] font-medium hover:bg-[#A5A7AD] transition-colors"
+                className="inline-flex items-center gap-2 rounded-[12px] bg-white px-6 py-3 font-medium text-black transition-colors hover:bg-[#A5A7AD]"
               >
                 TRY AGAIN
               </button>
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 px-6 py-3 border border-white/[0.12] rounded-[12px] font-medium hover:border-white/[0.24] transition-colors"
+                className="inline-flex items-center gap-2 rounded-[12px] border border-white/[0.12] px-6 py-3 font-medium transition-colors hover:border-white/[0.24]"
               >
                 GO HOME
               </Link>

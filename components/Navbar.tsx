@@ -3,7 +3,18 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-const sections = ['work', 'about', 'experience', 'creative', 'contact'];
+const sections = [
+  'work',
+  'about',
+  'build',
+  'tools',
+  'identity',
+  'github',
+  'experience',
+  'personal',
+  'creative',
+  'contact',
+];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -53,14 +64,12 @@ export default function Navbar() {
         href={href}
         onClick={handleClick}
         className={`transition-all duration-300 ${
-          isActive
-            ? 'text-[#6C63FF] relative'
-            : 'text-[#A5A7AD] hover:text-white'
+          isActive ? 'relative text-[#6C63FF]' : 'text-[#A5A7AD] hover:text-white'
         }`}
       >
         {label}
         {isActive && (
-          <span className="absolute bottom-[-6px] left-1/2 -translate-x-1/2 w-1 h-1 rounded-full bg-[#6C63FF]" />
+          <span className="absolute bottom-[-6px] left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-[#6C63FF]" />
         )}
       </a>
     );
@@ -68,61 +77,110 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        scrolled ? 'bg-[#070707]/80 backdrop-blur-xl border-b border-white/[0.06]' : ''
+      className={`fixed top-0 z-50 w-full transition-all duration-500 ${
+        scrolled ? 'border-b border-white/[0.06] bg-[#070707]/80 backdrop-blur-xl' : ''
       }`}
       style={{ transform: 'translateY(0)' }}
     >
-      <div className="max-w-[1400px] mx-auto px-6 md:px-10 h-[72px] flex items-center justify-between">
+      <div className="mx-auto flex h-[72px] max-w-[1400px] items-center justify-between px-6 md:px-10">
         <Link href="#" className="text-[14px] font-medium tracking-[0.2em] text-white">
           PRINCE BHAKTA
         </Link>
 
-        <div className="hidden md:flex items-center gap-10 text-[12px] tracking-wide">
+        <div className="hidden items-center gap-8 text-[11px] tracking-wide md:flex">
           {navLink('#work', 'WORK')}
           {navLink('#about', 'ABOUT')}
-          {navLink('#experience', 'EXPERIENCE')}
-          {navLink('#creative', 'CREATIVE')}
+          {navLink('#build', 'BUILD')}
+          {navLink('#tools', 'TOOLS')}
+          {navLink('#identity', 'IDENTITY')}
+          {navLink('#github', 'CODE')}
           {navLink('#contact', 'CONTACT')}
         </div>
 
         <Link
           href="#contact"
-          className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/[0.08] hover:border-white/[0.16] transition-colors text-[12px] tracking-wide"
+          className="hidden items-center gap-2 rounded-full border border-white/[0.08] px-4 py-2 text-[12px] tracking-wide transition-colors hover:border-white/[0.16] md:inline-flex"
         >
-          LET'S TALK
+          LET&apos;S TALK
         </Link>
 
         <button
-          className="md:hidden p-2 text-white"
+          className="p-2 text-white md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
           {mobileOpen ? (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           ) : (
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           )}
         </button>
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden py-6 border-t border-white/[0.06] bg-[#070707]/95 backdrop-blur-xl">
+        <div className="border-t border-white/[0.06] bg-[#070707]/95 py-6 backdrop-blur-xl md:hidden">
           <div className="flex flex-col gap-4 px-2">
-            <a href="#work" className="py-2 text-[14px] tracking-wide text-[#A5A7AD] hover:text-white transition-colors">WORK</a>
-            <a href="#about" className="py-2 text-[14px] tracking-wide text-[#A5A7AD] hover:text-white transition-colors">ABOUT</a>
-            <a href="#experience" className="py-2 text-[14px] tracking-wide text-[#A5A7AD] hover:text-white transition-colors">EXPERIENCE</a>
-            <a href="#creative" className="py-2 text-[14px] tracking-wide text-[#A5A7AD] hover:text-white transition-colors">CREATIVE</a>
-            <a href="#contact" className="py-2 text-[14px] tracking-wide text-[#A5A7AD] hover:text-white transition-colors">CONTACT</a>
+            <a
+              href="#work"
+              className="py-2 text-[14px] tracking-wide text-[#A5A7AD] transition-colors hover:text-white"
+            >
+              WORK
+            </a>
+            <a
+              href="#about"
+              className="py-2 text-[14px] tracking-wide text-[#A5A7AD] transition-colors hover:text-white"
+            >
+              ABOUT
+            </a>
+            <a
+              href="#build"
+              className="py-2 text-[14px] tracking-wide text-[#A5A7AD] transition-colors hover:text-white"
+            >
+              BUILD
+            </a>
+            <a
+              href="#tools"
+              className="py-2 text-[14px] tracking-wide text-[#A5A7AD] transition-colors hover:text-white"
+            >
+              TOOLS
+            </a>
+            <a
+              href="#identity"
+              className="py-2 text-[14px] tracking-wide text-[#A5A7AD] transition-colors hover:text-white"
+            >
+              IDENTITY
+            </a>
+            <a
+              href="#github"
+              className="py-2 text-[14px] tracking-wide text-[#A5A7AD] transition-colors hover:text-white"
+            >
+              CODE
+            </a>
+            <a
+              href="#contact"
+              className="py-2 text-[14px] tracking-wide text-[#A5A7AD] transition-colors hover:text-white"
+            >
+              CONTACT
+            </a>
             <Link
               href="#contact"
-              className="mt-4 inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full border border-white/[0.08] hover:border-white/[0.16] transition-colors text-[12px] tracking-wide"
+              className="mt-4 inline-flex items-center justify-center gap-2 rounded-full border border-white/[0.08] px-4 py-2 text-[12px] tracking-wide transition-colors hover:border-white/[0.16]"
             >
-              LET'S TALK
+              LET&apos;S TALK
             </Link>
           </div>
         </div>
