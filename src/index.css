@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #0e0e0e;
+    color: #e5e2e1;
+    font-family: var(--font-body);
+  }
+
+  /* Custom scrollbar suppression for ultra-clean cyber aesthetic */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    display: none;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono, .font-code-snippet, .font-label-md, .font-label-sm {
+  font-family: var(--font-mono);
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.15; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(1.04); }
+}
+
+.animate-glow {
+  animation: pulseGlow 6s ease-in-out infinite;
+}
+
+@keyframes barBounce {
+  0%, 100% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1); }
+}
+
+.eq-bar-anim {
+  transform-origin: bottom;
+  animation: barBounce 0.85s ease-in-out infinite alternate;
+}
+
+.bg-grid-cyber {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Material Symbols optical styling */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+}
