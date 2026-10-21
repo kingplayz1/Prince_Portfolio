@@ -13,6 +13,7 @@ import { AboutPage } from './pages/AboutPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
 import { CookieConsent } from './components/CookieConsent';
+import { Analytics } from './components/Analytics';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<NavPage>('home');
@@ -132,6 +133,9 @@ export default function App() {
 
       {/* Cookie Consent Banner */}
       <CookieConsent onAccept={() => {}} onDecline={() => {}} />
+
+      {/* Privacy-First Analytics — only loads after consent */}
+      <Analytics gaId={import.meta.env.VITE_GA_ID} />
 
       {/* Universal Signature Monolith Footer */}
       <Footer onShowToast={showToast} />
