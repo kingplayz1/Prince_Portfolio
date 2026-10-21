@@ -10,6 +10,9 @@ import { HomePage } from './pages/HomePage';
 import { WorkPage } from './pages/WorkPage';
 import { CreativePage } from './pages/CreativePage';
 import { AboutPage } from './pages/AboutPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { TermsPage } from './pages/TermsPage';
+import { CookieConsent } from './components/CookieConsent';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<NavPage>('home');
@@ -35,6 +38,14 @@ export default function App() {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Default to not-found page for unmatched routes
+  useEffect(() => {
+    const validPages: NavPage[] = ['home', 'work', 'creative', 'about', 'contact', 'privacy', 'terms'];
+    if (!validPages.includes(currentPage as NavPage)) {
+      setCurrentPage('not-found');
+    }
+  }, [currentPage]);
 
   const handleOpenCaseStudy = (project: ProjectItem) => {
     setSelectedProject(project);
@@ -101,9 +112,26 @@ export default function App() {
           <AboutPage
             onOpenContact={handleOpenContact}
             onShowToast={showToast}
-          />
-        )}
+          />)}
+
+        {currentPage === 'privacy' && (
+          <PrivacyPolicyPage
+            onNavigate={handleNavigate}
+          />)}
+
+        {currentPage === 'terms' && (
+          <TermsPage
+            onNavigate={handleNavigate}
+          />)}
+
+        {currentPage === 'not-found' && (
+          <NotFoundPage
+            onNavigate={handleNavigate}
+          />)}
       </main>
+
+      {/* Cookie Consent Banner */}
+      <CookieConsent onAccept={() => {}} onDecline={() => {}} />
 
       {/* Universal Signature Monolith Footer */}
       <Footer onShowToast={showToast} />

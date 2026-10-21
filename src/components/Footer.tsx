@@ -68,6 +68,29 @@ export const Footer: React.FC<FooterProps> = ({ onShowToast }) => {
             <span>SYS REF // 2026.04.18</span>
             <span>© 2026 Prince Bhakta. Built with code, precision & motion.</span>
           </div>
+
+          <div className="flex gap-4 text-xs text-[#918fa1] uppercase tracking-wider mt-2 md:mt-0">
+            <a
+              href="#privacy"
+              onClick={(e) => {
+                e.preventDefault();
+                onShowToast('Navigating to Privacy Policy...');
+              }}
+              className="hover:text-[#a2e7ff] transition-colors"
+            >
+              Privacy
+            </a>
+            <a
+              href="#terms"
+              onClick={(e) => {
+                e.preventDefault();
+                onShowToast('Navigating to Terms & Conditions...');
+              }}
+              className="hover:text-[#a2e7ff] transition-colors"
+            >
+              Terms
+            </a>
+          </div>
         </div>
       </div>
     </footer>

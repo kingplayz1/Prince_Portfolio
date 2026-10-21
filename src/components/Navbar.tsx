@@ -95,6 +95,26 @@ export const Navbar: React.FC<NavbarProps> = ({
               About & Journey
             </button>
             <button
+              onClick={() => handleNavClick('privacy')}
+              className={`font-mono text-xs uppercase tracking-widest transition-colors cursor-pointer ${
+                currentPage === 'privacy'
+                  ? 'text-[#c4c0ff] font-semibold'
+                  : 'text-[#c7c4d8] hover:text-[#e5e2e1]'
+              }`}
+            >
+              Privacy
+            </button>
+            <button
+              onClick={() => handleNavClick('terms')}
+              className={`font-mono text-xs uppercase tracking-widest transition-colors cursor-pointer ${
+                currentPage === 'terms'
+                  ? 'text-[#c4c0ff] font-semibold'
+                  : 'text-[#c7c4d8] hover:text-[#e5e2e1]'
+              }`}
+            >
+              Terms
+            </button>
+            <button
               onClick={onOpenContact}
               className="font-mono text-xs uppercase tracking-widest text-[#c7c4d8] hover:text-[#e5e2e1] transition-colors cursor-pointer"
             >
@@ -178,6 +198,24 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <span>04 // About & Journey</span>
                 {currentPage === 'about' && <span className="w-1.5 h-1.5 rounded-full bg-[#c4c0ff]"></span>}
+              </button>
+              <button
+                onClick={() => handleNavClick('privacy')}
+                className={`py-2 px-3 rounded text-left transition-colors flex items-center justify-between ${
+                  currentPage === 'privacy' ? 'bg-[#2a2a2a] text-[#c4c0ff] font-bold' : 'text-[#c7c4d8] hover:bg-[#2a2a2a]'
+                }`}
+              >
+                <span>11 // Privacy Policy</span>
+                {currentPage === 'privacy' && <span className="w-1.5 h-1.5 rounded-full bg-[#c4c0ff]"></span>}
+              </button>
+              <button
+                onClick={() => handleNavClick('terms')}
+                className={`py-2 px-3 rounded text-left transition-colors flex items-center justify-between ${
+                  currentPage === 'terms' ? 'bg-[#2a2a2a] text-[#c4c0ff] font-bold' : 'text-[#c7c4d8] hover:bg-[#2a2a2a]'
+                }`}
+              >
+                <span>12 // Terms & Conditions</span>
+                {currentPage === 'terms' && <span className="w-1.5 h-1.5 rounded-full bg-[#c4c0ff]"></span>}
               </button>
             </nav>
             <div className="pt-2 border-t border-[#464555]/30">
