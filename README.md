@@ -1,18 +1,18 @@
-<div align="center">
-  <h1>Prince Bhakta — Developer · Creative Editor · Builder</h1>
+﻿<div align="center">
+  <h1>Prince Bhakta â€” Developer Â· Creative Editor Â· Builder</h1>
   <p>Portfolio and creative engineering showcase bridging low-level systems engineering with cinematic visual storytelling and real-time multiplayer architecture.</p>
   
   <p>
-    <a href="https://princebhakta.dev"><strong>Live Demo</strong></a> •
-    <a href="https://github.com/kingplayz1/Prince_Portfolio">Repository</a> •
-    <a href="https://youtube.com/@KINGPLAYZ008">YouTube</a> •
+    <a href="https://princebhakta.dev"><strong>Live Demo</strong></a> â€¢
+    <a href="https://github.com/kingplayz1/Prince_Portfolio">Repository</a> â€¢
+    <a href="https://youtube.com/@KINGPLAYZ008">YouTube</a> â€¢
     <a href="https://github.com/kingplayz1">GitHub</a>
   </p>
 </div>
 
 ---
 
-## 🎯 Overview
+## ðŸŽ¯ Overview
 
 A sophisticated personal portfolio website showcasing dual-discipline expertise:
 
@@ -21,11 +21,11 @@ A sophisticated personal portfolio website showcasing dual-discipline expertise:
 | **Systems Engineering** | FiveM Lua (128-tick), WebSocket delta compression, Redis in-memory state, Node.js workers, Docker clusters |
 | **Web Development** | React 19, Three.js/WebGL, TypeScript, Tailwind CSS v4, Motion (Framer Motion 12) |
 | **Creative & Motion** | Premiere Pro, After Effects, DaVinci Resolve Studio, Blender, LUT grading, NLE timeline simulation |
-| **Content Creation** | YouTube @KINGPLAYZ008 — tech tutorials, game dev, creative workflows |
+| **Content Creation** | YouTube @KINGPLAYZ008 â€” tech tutorials, game dev, creative workflows |
 
 ---
 
-## 🛠 Tech Stack
+## ðŸ›  Tech Stack
 
 | Category | Technologies |
 |----------|--------------|
@@ -38,7 +38,7 @@ A sophisticated personal portfolio website showcasing dual-discipline expertise:
 
 ---
 
-## 🚀 Quick Start
+## ðŸš€ Quick Start
 
 ### Prerequisites
 - Node.js 18+ (recommended: 20+)
@@ -74,40 +74,40 @@ npm run lint
 
 ---
 
-## 📁 Project Structure
+## ðŸ“ Project Structure
 
 ```
-├── public/
-│   └── prince.png              # Portrait asset (served at /prince.png)
-├── src/
-│   ├── components/             # Reusable UI components
-│   │   ├── Navbar.tsx          # Top nav + mobile bottom dock
-│   │   ├── Footer.tsx          # Signature monolith footer
-│   │   ├── Toast.tsx           # Real-time notifications
-│   │   ├── ContactModal.tsx    # Contact form modal
-│   │   ├── CaseStudyDrawer.tsx # Project detail drawer
-│   │   └── VideoPlayerModal.tsx # Video showcase player
-│   ├── pages/
-│   │   ├── HomePage.tsx        # Hero, terminal, projects, tech stack, timeline
-│   │   ├── WorkPage.tsx        # Filterable grid, subsystems, git clone
-│   │   ├── CreativePage.tsx    # Showreel, LUT switcher, NLE timeline, YouTube hub
-│   │   └── AboutPage.tsx       # Dual discipline, milestones, rig inspector, terminal
-│   ├── data/
-│   │   └── portfolioData.ts    # All content: projects, videos, milestones, tools
-│   ├── types.ts                # TypeScript interfaces
-│   ├── App.tsx                 # Routing, state management, modals
-│   ├── main.tsx                # Entry point
-│   └── index.css               # Tailwind v4, CSS variables, custom animations
-├── index.html                  # HTML template with SEO/meta tags
-├── package.json
-├── tsconfig.json
-├── vite.config.ts
-└── .env.example                # Environment variables template
+â”œâ”€â”€ public/
+â”‚   â””â”€â”€ prince.png              # Portrait asset (served at /prince.png)
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ components/             # Reusable UI components
+â”‚   â”‚   â”œâ”€â”€ Navbar.tsx          # Top nav + mobile bottom dock
+â”‚   â”‚   â”œâ”€â”€ Footer.tsx          # Signature monolith footer
+â”‚   â”‚   â”œâ”€â”€ Toast.tsx           # Real-time notifications
+â”‚   â”‚   â”œâ”€â”€ ContactModal.tsx    # Contact form modal
+â”‚   â”‚   â”œâ”€â”€ CaseStudyDrawer.tsx # Project detail drawer
+â”‚   â”‚   â””â”€â”€ VideoPlayerModal.tsx # Video showcase player
+â”‚   â”œâ”€â”€ pages/
+â”‚   â”‚   â”œâ”€â”€ HomePage.tsx        # Hero, terminal, projects, tech stack, timeline
+â”‚   â”‚   â”œâ”€â”€ WorkPage.tsx        # Filterable grid, subsystems, git clone
+â”‚   â”‚   â”œâ”€â”€ CreativePage.tsx    # Showreel, LUT switcher, NLE timeline, YouTube hub
+â”‚   â”‚   â””â”€â”€ AboutPage.tsx       # Dual discipline, milestones, rig inspector, terminal
+â”‚   â”œâ”€â”€ data/
+â”‚   â”‚   â””â”€â”€ portfolioData.ts    # All content: projects, videos, milestones, tools
+â”‚   â”œâ”€â”€ types.ts                # TypeScript interfaces
+â”‚   â”œâ”€â”€ App.tsx                 # Routing, state management, modals
+â”‚   â”œâ”€â”€ main.tsx                # Entry point
+â”‚   â””â”€â”€ index.css               # Tailwind v4, CSS variables, custom animations
+â”œâ”€â”€ index.html                  # HTML template with SEO/meta tags
+â”œâ”€â”€ package.json
+â”œâ”€â”€ tsconfig.json
+â”œâ”€â”€ vite.config.ts
+â””â”€â”€ .env.example                # Environment variables template
 ```
 
 ---
 
-## ✨ Key Features
+## âœ¨ Key Features
 
 ### Home Page (`/`)
 - Interactive terminal simulation with runnable commands
@@ -135,7 +135,7 @@ npm run lint
 - YouTube content hub with filtering
 
 ### About Page (`/about`)
-- **Dual Discipline Toggle**: Developer Mindset ↔ Editor & Creator Eye
+- **Dual Discipline Toggle**: Developer Mindset â†” Editor & Creator Eye
 - Milestone dossiers with technical logs
 - Live Rig & Tool Telemetry Inspector (click any tool for specs)
 - AST Packet Burst Simulator (LuaJIT delta sync visualization)
@@ -143,7 +143,7 @@ npm run lint
 
 ---
 
-## 🌐 Vercel Deployment
+## ðŸŒ Vercel Deployment
 
 ### Option 1: Vercel CLI (Recommended)
 ```bash
@@ -161,7 +161,7 @@ vercel --prod
 ```
 
 ### Option 2: GitHub Integration
-1. Go to [vercel.com](https://vercel.com) → **Add New Project**
+1. Go to [vercel.com](https://vercel.com) â†’ **Add New Project**
 2. Import `kingplayz1/Prince_Portfolio`
 3. Vercel auto-detects Vite settings:
    - **Framework Preset**: Vite
@@ -170,17 +170,17 @@ vercel --prod
    - **Install Command**: `npm install`
 4. Click **Deploy**
 
-### Environment Variables (if needed)
+### Custom Domain Setup`nTo deploy to a custom URL like `PrincePortfolio.vercel.app`: `n1. After deploying with `vercel`, go to Vercel Dashboard → `Settings → Domains` `n2. Add your custom domain and follow the DNS verification steps `n3. Or rename the Vercel project in `Settings → General` to your desired name `n`n### Environment Variables (if needed)
 | Variable | Description | Required |
 |----------|-------------|----------|
 | `VITE_GA_ID` | Google Analytics Measurement ID | No |
 | `VITE_SITE_URL` | Canonical URL for SEO | No |
 
-Add these in Vercel Dashboard → **Settings → Environment Variables**.
+Add these in Vercel Dashboard â†’ **Settings â†’ Environment Variables**.
 
 ---
 
-## 🎨 Customization
+## ðŸŽ¨ Customization
 
 ### Design Tokens (`src/index.css`)
 ```css
@@ -198,7 +198,7 @@ Add these in Vercel Dashboard → **Settings → Environment Variables**.
 ```
 
 ### Content (`src/data/portfolioData.ts`)
-All portfolio content is centralized — edit this file to update:
+All portfolio content is centralized â€” edit this file to update:
 - Projects, videos, milestones
 - Rig tools & hardware specs
 - Technology stack items
@@ -206,7 +206,7 @@ All portfolio content is centralized — edit this file to update:
 
 ---
 
-## 📝 Available Scripts
+## ðŸ“ Available Scripts
 
 | Command | Description |
 |---------|-------------|
@@ -218,13 +218,13 @@ All portfolio content is centralized — edit this file to update:
 
 ---
 
-## 📄 License
+## ðŸ“„ License
 
-MIT License — feel free to use as inspiration for your own portfolio.
+MIT License â€” feel free to use as inspiration for your own portfolio.
 
 ---
 
-## 🙋‍♂️ Connect
+## ðŸ™‹â€â™‚ï¸ Connect
 
 - **GitHub**: [@kingplayz1](https://github.com/kingplayz1)
 - **YouTube**: [@KINGPLAYZ008](https://youtube.com/@KINGPLAYZ008)
@@ -234,5 +234,5 @@ MIT License — feel free to use as inspiration for your own portfolio.
 ---
 
 <div align="center">
-  <sub>Built with ❤️ using React 19 + Vite 8 + Tailwind v4 + Motion 12</sub>
+  <sub>Built with â¤ï¸ using React 19 + Vite 8 + Tailwind v4 + Motion 12</sub>
 </div>
